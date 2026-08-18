@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # ============================================================================
-# Gentleman Guardian Angel - Provider-agnostic code review using AI
+# comprafacil Guardian Angel - Provider-agnostic code review using AI
 # ============================================================================
 # A standalone CLI tool that validates staged files against your project's
 # coding standards using any AI provider (Claude, Gemini, Codex, Ollama, etc.)
@@ -169,7 +169,7 @@ check_update() {
 print_banner() {
   echo ""
   echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-  echo -e "${CYAN}${BOLD}  Gentleman Guardian Angel v${VERSION}${NC}"
+  echo -e "${CYAN}${BOLD}  comprafacil Guardian Angel v${VERSION}${NC}"
   echo -e "${CYAN}  Provider-agnostic code review using AI${NC}"
   check_update
   echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
@@ -399,7 +399,7 @@ cmd_init() {
   fi
 
   cat > "$PROJECT_CONFIG" << 'EOF'
-# Gentleman Guardian Angel Configuration
+# comprafacil Guardian Angel Configuration
 # https://github.com/your-org/gga
 
 # AI Provider (required)
@@ -526,10 +526,9 @@ cmd_install() {
       log_warning "Found legacy 'ai-code-review' in hook, migrating to 'gga'..."
       if [[ "$GGA_OS" == "macos" ]]; then
         sed -i '' 's/ai-code-review/gga/g' "$HOOK_PATH"
-        sed -i '' 's/AI Code Review/Gentleman Guardian Angel/g' "$HOOK_PATH"
+sed -i '' 's/AI Code Review/comprafacil Guardian Angel/g' "$HOOK_PATH"
       else
-        sed -i 's/ai-code-review/gga/g' "$HOOK_PATH"
-        sed -i 's/AI Code Review/Gentleman Guardian Angel/g' "$HOOK_PATH"
+        sed -i 's/AI Code Review/comprafacil Guardian Angel/g' "$HOOK_PATH"
       fi
       log_success "Migrated hook to use 'gga'"
       exit 0
@@ -537,7 +536,7 @@ cmd_install() {
 
     # Check if GGA is already installed (using markers)
     if grep -q "$GGA_MARKER_START" "$HOOK_PATH"; then
-      log_warning "Gentleman Guardian Angel hook already installed in $hook_type"
+      log_warning "comprafacil Guardian Angel hook already installed in $hook_type"
       exit 0
     fi
     
@@ -548,7 +547,7 @@ cmd_install() {
     local gga_block
     gga_block=$(printf '\n%s\n%s\n%s\n%s' \
       "$GGA_MARKER_START" \
-      "# Gentleman Guardian Angel - Code Review" \
+      "# comprafacil Guardian Angel - Code Review" \
       "$gga_run_cmd" \
       "$GGA_MARKER_END")
     
@@ -571,7 +570,7 @@ cmd_install() {
         } > "$temp_file"
         mv "$temp_file" "$HOOK_PATH"
         chmod +x "$HOOK_PATH"
-        log_success "Inserted Gentleman Guardian Angel before exit in $hook_type hook: $HOOK_PATH"
+        log_success "Inserted comprafacil Guardian Angel before exit in $hook_type hook: $HOOK_PATH"
         echo ""
         exit 0
       fi
@@ -579,7 +578,7 @@ cmd_install() {
     
     # No exit statement found, append to end
     echo "$gga_block" >> "$HOOK_PATH"
-    log_success "Appended Gentleman Guardian Angel to existing $hook_type hook: $HOOK_PATH"
+    log_success "Appended comprafacil Guardian Angel to existing $hook_type hook: $HOOK_PATH"
     echo ""
     exit 0
   fi
@@ -589,7 +588,7 @@ cmd_install() {
 #!/usr/bin/env bash
 
 $GGA_MARKER_START
-# Gentleman Guardian Angel - Code Review
+# comprafacil Guardian Angel - Code Review
 $gga_run_cmd
 $GGA_MARKER_END
 EOF
@@ -625,7 +624,7 @@ cmd_uninstall() {
   done
 
   if [[ "$found_any" == false ]]; then
-    log_warning "Gentleman Guardian Angel hook not found"
+    log_warning "comprafacil Guardian Angel hook not found"
   fi
   
   echo ""
@@ -652,7 +651,7 @@ uninstall_from_hook() {
       rm "$hook_path"
       log_success "Removed $hook_name hook (was GGA-only)"
     else
-      log_success "Removed Gentleman Guardian Angel from $hook_name hook"
+      log_success "Removed comprafacil Guardian Angel from $hook_name hook"
     fi
     return
   fi
@@ -665,13 +664,13 @@ uninstall_from_hook() {
   else
     # Mixed hook, just remove our lines (legacy format)
     if [[ "$GGA_OS" == "macos" ]]; then
-      sed -i '' '/# Gentleman Guardian Angel/d' "$hook_path"
+      sed -i '' '/# comprafacil Guardian Angel/d' "$hook_path"
       sed -i '' '/gga run/d' "$hook_path"
     else
-      sed -i '/# Gentleman Guardian Angel/d' "$hook_path"
+      sed -i '/# comprafacil Guardian Angel/d' "$hook_path"
       sed -i '/gga run/d' "$hook_path"
     fi
-    log_success "Removed Gentleman Guardian Angel from $hook_name hook"
+    log_success "Removed comprafacil Guardian Angel from $hook_name hook"
   fi
 }
 

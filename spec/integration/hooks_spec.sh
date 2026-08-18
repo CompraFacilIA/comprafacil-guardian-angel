@@ -137,7 +137,7 @@ EOF
       mkdir -p .git/hooks
       cat > .git/hooks/pre-commit << 'EOF'
 #!/usr/bin/env bash
-# Gentleman Guardian Angel
+# comprafacil Guardian Angel
 gga run || exit 1
 EOF
       chmod +x .git/hooks/pre-commit

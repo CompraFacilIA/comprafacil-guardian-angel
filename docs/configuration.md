@@ -2,7 +2,7 @@
 
 > 📖 Back to [README](../README.md)
 
-Complete reference for configuring Gentleman Guardian Angel.
+Complete reference for configuring comprafacil Guardian Angel.
 
 ---
 

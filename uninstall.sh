@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # ============================================================================
-# Gentleman Guardian Angel - Uninstaller
+# comprafacil Guardian Angel - Uninstaller
 # ============================================================================
 # Removes the gga CLI tool from your system
 # ============================================================================
@@ -28,7 +28,7 @@ GGA_OS=$(detect_os)
 
 echo ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${CYAN}${BOLD}  Gentleman Guardian Angel - Uninstaller${NC}"
+echo -e "${CYAN}${BOLD}  Comprafacil Guardian Angel - Uninstaller${NC}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 

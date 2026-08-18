@@ -1,11 +1,11 @@
 <p align="center">
-  <img width="1024" height="408" alt="image" src="https://github.com/user-attachments/assets/e534ba1e-0044-45c7-a788-b455733c0052" />
+  <img width="1024" height="408" alt="image" src="https://comprafacil-bucket.s3.us-east-1.amazonaws.com/static/images/Gemini_Generated_Image_oxl3y1oxl3y1oxl3.jpeg" />
 </p>
 
 <p align="center">
-  <strong>Provider-agnostic code review using AI</strong><br>
-  Use Claude, Gemini, Codex, OpenCode, Cursor Agent, Kilo, Kiro, Ollama, LM Studio, GitHub Models, MiniMax, or any AI to enforce your coding standards.<br>
-  Pure Bash core. Works everywhere.
+  <strong>Revisión de código con IA, agnóstica de proveedor</strong><br>
+  Usa Claude, Gemini, Codex, OpenCode, Cursor Agent, Kilo, Kiro, Ollama, LM Studio, GitHub Models, MiniMax o cualquier IA para hacer cumplir tus estándares de código.<br>
+  Núcleo en Bash puro. Funciona en cualquier entorno.
 </p>
 
 <p align="center">
@@ -19,24 +19,24 @@
 </p>
 
 <p align="center">
-  <a href="#-installation">Installation</a> •
-  <a href="#-quick-start">Quick Start</a> •
-  <a href="#-providers">Providers</a> •
-  <a href="#-commands">Commands</a> •
-  <a href="#-documentation">Docs</a>
+  <a href="#-instalación">Instalación</a> •
+  <a href="#-inicio-rápido">Inicio Rápido</a> •
+  <a href="#-proveedores">Proveedores</a> •
+  <a href="#-comandos">Comandos</a> •
+  <a href="#-documentación">Documentación</a>
 </p>
 
 ---
 
-## Example
+## Ejemplo
 
 <img width="962" height="941" alt="image" src="https://github.com/user-attachments/assets/c8963dff-6aa5-420c-b58b-1416e81af384" />
 
-## 🎯 Why?
+## 🎯 ¿Por qué?
 
-You have coding standards. Your team ignores them. Code reviews catch issues too late.
+Tienes estándares de código. Tu equipo los ignora. Las code reviews detectan los problemas demasiado tarde.
 
-**GGA** runs on every commit, validating staged files against your `AGENTS.md`. Like having a senior developer review every line before it hits the repo.
+**GGA** se ejecuta en cada commit, validando los archivos staged contra tu `AGENTS.md`. Como tener un desarrollador senior revisando cada línea antes de que llegue al repo.
 
 ```
 ┌─────────────────┐     ┌──────────────┐     ┌─────────────────┐
@@ -45,18 +45,18 @@ You have coding standards. Your team ignores them. Code reviews catch issues too
 └─────────────────┘     └──────────────┘     └─────────────────┘
 ```
 
-- 🔌 **Provider agnostic** — Claude, Gemini, Codex, OpenCode, Cursor Agent, Kilo, Kiro, Ollama, LM Studio, GitHub Models, MiniMax
-- 📦 **Pure Bash core** — no runtime framework; individual providers may require their own CLI or API tooling
-- 🪝 **Git native** — Standard pre-commit hook
-- ⚡ **Smart caching** — Skip unchanged files
-- 🔍 **PR review mode** — Review full PRs, not just last commit
-- 🪟 **Cross-platform** — macOS, Linux, Windows (Git Bash), WSL
+- 🔌 **Agnóstico de proveedor** — Claude, Gemini, Codex, OpenCode, Cursor Agent, Kilo, Kiro, Ollama, LM Studio, GitHub Models, MiniMax
+- 📦 **Núcleo en Bash puro** — sin runtime ni frameworks; algunos proveedores pueden requerir su propio CLI o tooling de API
+- 🪝 **Nativo de Git** — Hook estándar pre-commit
+- ⚡ **Caché inteligente** — Omite archivos sin cambios
+- 🔍 **Modo de revisión de PR** — Revisa PRs completos, no solo el último commit
+- 🪟 **Multiplataforma** — macOS, Linux, Windows (Git Bash), WSL
 
 ---
 
-## 📦 Installation
+## 📦 Instalación
 
-### Homebrew (recommended)
+### Homebrew (recomendado)
 
 ```bash
 brew install gentleman-programming/tap/gga
@@ -65,58 +65,58 @@ brew install gentleman-programming/tap/gga
 ### Manual
 
 ```bash
-git clone https://github.com/Gentleman-Programming/gentleman-guardian-angel.git
-cd gentleman-guardian-angel
+git clone https://github.com/PauloCCBCompraFacil/comprafacil-guardian-angel.git
+cd comprafacil-guardian-angel
 ./install.sh
 ```
 
 ### Windows (Git Bash, PowerShell, cmd.exe)
 
 ```bash
-git clone https://github.com/Gentleman-Programming/gentleman-guardian-angel.git
-cd gentleman-guardian-angel
+git clone https://github.com/PauloCCBCompraFacil/comprafacil-guardian-angel.git
+cd comprafacil-guardian-angel
 bash install.sh
 echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
 ```
 
-On Windows, the installer also creates `~/bin/gga.bat` so `gga` can be called from `cmd.exe` and PowerShell. Add `%USERPROFILE%\bin` to your Windows user `PATH` for those shells; `.bashrc` only affects Git Bash.
+On Windows, el instalador también crea `~/bin/gga.bat` para que `gga` pueda invocarse desde `cmd.exe` y PowerShell. Añade `%USERPROFILE%\bin` al `PATH` de tu usuario de Windows para esas shells; `.bashrc` solo afecta a Git Bash.
 
-> **WSL** is also fully supported — no special configuration needed.
+> **WSL** también está completamente soportado — no requiere configuración especial.
 
-### Oh My Zsh users
+### Usuarios de Oh My Zsh
 
-If you use [Oh My Zsh](https://ohmyz.sh/) with the `git` plugin enabled (the default), the alias `gga` will conflict with this CLI. You'll see:
+Si usas [Oh My Zsh](https://ohmyz.sh/) con el plugin `git` habilitado (el valor por defecto), el alias `gga` entrará en conflicto con este CLI. Verás:
 
 ```
 git: 'gui' is not a git command. See 'git --help'.
 ```
 
-**Fix:** Add this line to your `~/.zshrc` after the Oh My Zsh source line:
+**Solución:** Añade esta línea a tu `~/.zshrc` después de la línea `source` de Oh My Zsh:
 
 ```bash
 unalias gga 2>/dev/null
 ```
 
-Then run `source ~/.zshrc` or open a new terminal.
+Después ejecuta `source ~/.zshrc` o abre una nueva terminal.
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Inicio Rápido
 
 ```bash
 cd ~/your-project
-gga init                # Create .gga config
-gga install             # Install git hook
-# Edit .gga to set your PROVIDER
-# Create AGENTS.md with your coding standards
-# Done — every commit gets reviewed 🎉
+gga init                # Crea el archivo .gga de config
+gga install             # Instala el git hook
+# Edita .gga para definir tu PROVIDER
+# Crea AGENTS.md con tus estándares de código
+# Listo — cada commit se revisará 🎉
 ```
 
 ---
 
-## 🔌 Providers
+## 🔌 Proveedores
 
-| Provider | Config Value | Installation |
+| Proveedor | Valor de config | Instalación |
 |----------|-------------|-------------|
 | **Claude** | `claude` | [claude.ai/code](https://claude.ai/code) |
 | **Gemini** | `gemini` | [gemini-cli](https://github.com/google-gemini/gemini-cli) |
@@ -130,51 +130,51 @@ gga install             # Install git hook
 | **GitHub Models** | `github:<model>` | [marketplace/models](https://github.com/marketplace/models) |
 | **MiniMax** | `minimax[:model]` | [platform.minimax.io](https://platform.minimax.io) |
 
-> 📖 See [docs/providers.md](docs/providers.md) for detailed examples and setup.
+> 📖 Consulta [docs/providers.md](docs/providers.md) para ver ejemplos detallados y configuración.
 
 ---
 
-## 📋 Commands
+## 📋 Comandos
 
-| Command | Description |
+| Comando | Descripción |
 |---------|------------|
-| `gga init` | Create sample `.gga` config |
-| `gga install` | Install pre-commit hook |
-| `gga install --commit-msg` | Install commit-msg hook |
-| `gga uninstall` | Remove hooks |
-| `gga run` | Review staged files |
-| `gga run --ci` | Review last commit (CI/CD) |
-| `gga run --pr-mode` | Review full PR changes |
-| `gga run --no-cache` | Review ignoring cache |
-| `gga config` | Show configuration |
-| `gga cache status` | Show cache info |
-| `gga version` | Show version |
+| `gga init` | Crea un archivo `.gga` de configuración de muestra |
+| `gga install` | Instala el hook pre-commit |
+| `gga install --commit-msg` | Instala el hook commit-msg |
+| `gga uninstall` | Elimina los hooks instalados |
+| `gga run` | Revisa los archivos staged |
+| `gga run --ci` | Revisa el último commit (CI/CD) |
+| `gga run --pr-mode` | Revisa los cambios completos del PR |
+| `gga run --no-cache` | Revisa ignorando la caché |
+| `gga config` | Muestra la configuración actual |
+| `gga cache status` | Muestra información de la caché |
+| `gga version` | Muestra la versión |
 
-> 📖 See [docs/commands.md](docs/commands.md) for detailed usage.
+> 📖 Consulta [docs/commands.md](docs/commands.md) para ver el uso detallado.
 
 ---
 
-## 📚 Documentation
+## 📚 Documentación
 
-| Topic | Description |
+| Tema | Descripción |
 |-------|------------|
-| [Configuration](docs/configuration.md) | `.gga` config file, options, hierarchy, env overrides |
-| [Rules File](docs/rules-file.md) | Writing effective `AGENTS.md`, best practices, skill-based approach |
-| [Providers](docs/providers.md) | Detailed setup for each AI provider |
-| [Commands](docs/commands.md) | Full command reference with examples |
-| [Caching](docs/caching.md) | How smart caching works, invalidation, commands |
+| [Configuration](docs/configuration.md) | Archivo de config `.gga`, opciones, jerarquía y overrides por variables de entorno |
+| [Rules File](docs/rules-file.md) | Cómo escribir un `AGENTS.md` efectivo, buenas prácticas y enfoque basado en skills |
+| [Providers](docs/providers.md) | Configuración detallada de cada proveedor de IA |
+| [Commands](docs/commands.md) | Referencia completa de comandos con ejemplos |
+| [Caching](docs/caching.md) | Cómo funciona la caché inteligente, invalidación y comandos asociados |
 | [Integrations](docs/integrations.md) | Husky, pre-commit, Lefthook, VS Code, CI/CD |
-| [Examples](docs/examples.md) | Real-world walkthrough, project configs |
-| [Troubleshooting](docs/troubleshooting.md) | Common issues and fixes |
-| [Changelog](docs/changelog.md) | Version history |
-| [Contributing](CONTRIBUTING.md) | How to contribute (issue-first workflow) |
+| [Examples](docs/examples.md) | Walkthrough real y configs de proyecto |
+| [Troubleshooting](docs/troubleshooting.md) | Problemas comunes y soluciones |
+| [Changelog](docs/changelog.md) | Historial de versiones |
+| [Contributing](CONTRIBUTING.md) | Cómo contribuir (flujo issue-first) |
 
 ---
 
-## 📄 License
+## 📄 Licencia
 
 MIT © 2024
 
 <p align="center">
-  <sub>Built with 🧉 by developers who got tired of repeating the same code review comments</sub>
+  <sub>Hecho con 🧉 por desarrolladores cansados de repetir los mismos comentarios en las code reviews</sub>
 </p>

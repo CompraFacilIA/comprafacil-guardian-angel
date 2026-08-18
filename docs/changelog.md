@@ -2,7 +2,7 @@
 
 > 📖 Back to [README](../README.md)
 
-Full version history for Gentleman Guardian Angel.
+Full version history for comprafacil Guardian Angel.
 
 ---
 

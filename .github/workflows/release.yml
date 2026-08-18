@@ -53,7 +53,7 @@ jobs:
           # Generate new formula
           cat > /tmp/gga.rb << FORMULA
           class Gga < Formula
-            desc "Gentleman Guardian Angel - Provider-agnostic code review using AI (Claude, Gemini, Codex, OpenCode, Ollama)"
+            desc "comprafacil Guardian Angel - Provider-agnostic code review using AI (Claude, Gemini, Codex, OpenCode, Ollama)"
             homepage "https://github.com/Gentleman-Programming/gentleman-guardian-angel"
             url "${TAR_URL}"
             sha256 "${SHA256}"

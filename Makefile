@@ -12,7 +12,7 @@ DOCKER_COMPOSE = docker compose
 # Help
 # ============================================================================
 help:
-	@echo "Gentleman Guardian Angel - Development Commands"
+	@echo "comprafacil Guardian Angel - Development Commands"
 	@echo ""
 	@echo "Usage: make [target]"
 	@echo ""

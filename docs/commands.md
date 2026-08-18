@@ -2,7 +2,7 @@
 
 > 📖 Back to [README](../README.md)
 
-Full command reference for Gentleman Guardian Angel.
+Full command reference for comprafacil Guardian Angel.
 
 ---
 

@@ -2,7 +2,7 @@
 
 > 📖 Back to [README](../README.md)
 
-Real-world walkthrough and project configuration examples for Gentleman Guardian Angel.
+Real-world walkthrough and project configuration examples for comprafacil Guardian Angel.
 
 ---
 
@@ -54,7 +54,7 @@ $ cd ~/projects/my-react-app
 $ gga init
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Gentleman Guardian Angel v2.8.0
+  comprafacil Guardian Angel v2.8.0
   Provider-agnostic code review using AI
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -116,7 +116,7 @@ EOF
 $ gga install
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Gentleman Guardian Angel v2.8.0
+  comprafacil Guardian Angel v2.8.0
   Provider-agnostic code review using AI
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -130,7 +130,7 @@ $ git add src/components/Button.tsx
 $ git commit -m "feat: add new button component"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Gentleman Guardian Angel v2.8.0
+  comprafacil Guardian Angel v2.8.0
   Provider-agnostic code review using AI
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -172,7 +172,7 @@ $ git add src/components/Button.tsx
 $ git commit -m "feat: add new button component"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Gentleman Guardian Angel v2.8.0
+  comprafacil Guardian Angel v2.8.0
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ℹ️  Provider: claude

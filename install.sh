@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # ============================================================================
-# Gentleman Guardian Angel - Installer
+# comprafacil Guardian Angel - Installer
 # ============================================================================
 # Installs the gga CLI tool to your system
 # ============================================================================
@@ -44,7 +44,7 @@ sed_in_place() {
 
 echo ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${CYAN}${BOLD}  Gentleman Guardian Angel - Installer${NC}"
+echo -e "${CYAN}${BOLD}  Comprafacil Guardian Angel - Installer${NC}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 

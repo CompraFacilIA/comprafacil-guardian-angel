@@ -2,7 +2,7 @@
 
 > 📖 Back to [README](../README.md)
 
-Gentleman Guardian Angel works standalone with native git hooks, but you can also integrate it with popular hook managers and CI/CD pipelines.
+comprafacil Guardian Angel works standalone with native git hooks, but you can also integrate it with popular hook managers and CI/CD pipelines.
 
 ---
 
@@ -37,7 +37,7 @@ Edit `.husky/pre-commit`:
 ```bash
 #!/usr/bin/env bash
 
-# Run Gentleman Guardian Angel
+# Run comprafacil Guardian Angel
 gga run || exit 1
 
 # Your other checks (optional)
@@ -97,11 +97,11 @@ Create `.pre-commit-config.yaml`:
 
 ```yaml
 repos:
-  # Gentleman Guardian Angel (runs first)
+  # comprafacil Guardian Angel (runs first)
   - repo: local
     hooks:
       - id: gga
-        name: Gentleman Guardian Angel
+name: comprafacil Guardian Angel
         entry: gga run
         language: system
         pass_filenames: false
@@ -164,7 +164,7 @@ pre-commit:
   commands:
     ai-review:
       run: gga run
-      fail_text: "Gentleman Guardian Angel failed. Fix violations before committing."
+      fail_text: "comprafacil Guardian Angel failed. Fix violations before committing."
 
     lint:
       glob: "*.{ts,tsx,js,jsx}"
@@ -212,13 +212,13 @@ That's it. When you commit via the Source Control panel (`Cmd+Enter` / `Ctrl+Ent
 
 ## CI/CD Integration
 
-You can also run Gentleman Guardian Angel in your CI pipeline:
+You can also run comprafacil Guardian Angel in your CI pipeline:
 
 ### GitHub Actions
 
 ```yaml
 # .github/workflows/ai-review.yml
-name: Gentleman Guardian Angel
+name: comprafacil Guardian Angel
 
 on:
   pull_request:
@@ -232,7 +232,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install Gentleman Guardian Angel
+      - name: Install comprafacil Guardian Angel
         run: |
           git clone https://github.com/Gentleman-Programming/gentleman-guardian-angel.git /tmp/gga
           chmod +x /tmp/gga/bin/gga

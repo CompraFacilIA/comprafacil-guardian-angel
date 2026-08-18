@@ -2,7 +2,7 @@
 
 > 📖 Back to [README](../README.md)
 
-Common issues and fixes for Gentleman Guardian Angel.
+Common issues and fixes for comprafacil Guardian Angel.
 
 ---
 

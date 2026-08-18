@@ -1,4 +1,4 @@
-# Contributing to Gentleman Guardian Angel (GGA)
+# Contributing to comprafacil Guardian Angel (GGA)
 
 This project follows a **strict issue-first workflow**. No PR is accepted without a linked, approved issue. Read this document before opening any issue or PR.
 
