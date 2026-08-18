@@ -19,3 +19,10 @@ When working on this project, load the relevant skill(s) BEFORE writing any code
 | `gga-issue-creation` | When creating a GitHub issue, reporting a bug, or requesting a feature. | [`skills/issue-creation/SKILL.md`](skills/issue-creation/SKILL.md) |
 | `gga-shellcheck-standards` | When writing or modifying bash scripts in bin/ or lib/. | [`skills/shellcheck-standards/SKILL.md`](skills/shellcheck-standards/SKILL.md) |
 | `gga-testing-coverage` | When implementing behavior changes in any script. | [`skills/testing-coverage/SKILL.md`](skills/testing-coverage/SKILL.md) |
+| `expert-software-architect-ddd` | Designing system architecture, modeling domains, structuring bounded contexts, or applying Hexagonal (Ports/Adapters) layout. | [`skills/expert-software-architect-ddd/SKILL.md`](skills/expert-software-architect-ddd/SKILL.md) |
+| `solid-architecture-expert` | Code reviews, new component design, legacy refactoring, or technical-debt mitigation using SOLID principles, CK/MOOD metrics, and Cognitive-Driven Development. | [`skills/solid-architecture-expert/SKILL.md`](skills/solid-architecture-expert/SKILL.md) |
+
+> **DDD vs. SOLID — when to load each:**
+> - Load `expert-software-architect-ddd` **first** when designing a new module, defining its Bounded Context, or laying out Ports/Adapters topology.
+> - Load `solid-architecture-expert` **after** the design exists, when reviewing the resulting code for SRP/OCP/LSP/ISP/DIP violations, cohesion/coupling metrics, or refactoring opportunities.
+> - They are complementary: DDD defines *what* the architecture looks like; SOLID validates *how well* each piece holds up. Both can be loaded simultaneously for greenfield work.

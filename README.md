@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="1024" height="408" alt="image" src="https://comprafacil-bucket.s3.us-east-1.amazonaws.com/static/images/Gemini_Generated_Image_oxl3y1oxl3y1oxl3.jpeg" />
+  <img width="1024" height="408" alt="image" src="https://comprafacil-bucket.s3.us-east-1.amazonaws.com/static/images/Gemini_Generated_Image_2q0b0h2q0b0h2q0b.jpeg" />
 </p>
 
 <p align="center">
@@ -56,13 +56,13 @@ Tienes estándares de código. Tu equipo los ignora. Las code reviews detectan l
 
 ## 📦 Instalación
 
-### Homebrew (recomendado)
+### Homebrew 
 
 ```bash
 brew install gentleman-programming/tap/gga
 ```
 
-### Manual
+### Manual (recomendado)
 
 ```bash
 git clone https://github.com/PauloCCBCompraFacil/comprafacil-guardian-angel.git
@@ -171,10 +171,3 @@ gga install             # Instala el git hook
 
 ---
 
-## 📄 Licencia
-
-MIT © 2024
-
-<p align="center">
-  <sub>Hecho con 🧉 por desarrolladores cansados de repetir los mismos comentarios en las code reviews</sub>
-</p>
